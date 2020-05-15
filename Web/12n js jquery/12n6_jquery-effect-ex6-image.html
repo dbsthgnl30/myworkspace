@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <style>
+        #small-image1 {
+            width: 100px;
+        }
+        #big-image1 {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        //아이언맨 사진 작은것 누르면 커지고, 커진것 다시 누르면 작아짐 
+        $(function name(params) {
+            $("#small-image1").click(function(){
+                $("#big-image1").fadeIn();
+            });        
+            
+            // 함수가 객체에 소속되어 있을 때  this 라는 키워드 사용 가능 
+            $("#big-image1").click(function(){
+                $(this).fadeOut();
+            }); 
+        });
+    </script>
+</head>
+
+<body>
+    <img id="small-image1" src="../11n js doc tree/아이언맨.jpg" alt="">
+    <img id="big-image1" src="../11n js doc tree/아이언맨.jpg" alt="">
+    
+</body>
+</html>

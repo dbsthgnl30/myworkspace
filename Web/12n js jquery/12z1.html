@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+        #cap1 {
+            width: 100px;
+        }
+        #cap2 {
+            width: 100%;
+            display: none;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            
+        }
+        #i3 {
+            width: 200px;
+        }
+        .col-2 {
+            border: 1px solid pink;
+        }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("#cap1").click(function(){
+            $("#cap2").fadeIn();
+        });
+
+        $("#cap2").click(function(){
+            $("#cap2").fadeToggle();
+        })
+        $("#i3").click(function(){
+            $("#i3").fadeToggle();
+        });
+
+        $("#ir").click(function(){
+            $("#i3").fadeIn(2000);
+        });
+
+        $(".p1").hide();
+
+        $("#bn1").click(function(){
+            $(".p1").hide();
+            $("#bn1+.p1").show(); //범위 
+
+        });
+    
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <img id="cap1" src="../11n js doc tree/캡아.jpg" alt="">
+        <img id="cap2" src="../11n js doc tree/캡아.jpg" alt="">
+        <img id="i3" src="../11n js doc tree/아이언맨.jpg" alt="">
+        <div class="row">
+            <div class="col">
+            <button id="ir" class="btn btn-primary">아이언맨 다시 나오는 버튼</button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-2">
+                <button  id="bn1" class="btn btn-danger">버튼1</button>
+                <div class="p1">Lorem, ipsum dolor.</div>
+            </div>
+
+            <div class="col-10">
+                <img  id="i3" src="../11n js doc tree/보.jpg" alt="">
+                <div  class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, maxime.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

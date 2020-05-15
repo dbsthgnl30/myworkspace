@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         /* <!-- 표시되는 모양 바꾼다 att_type / 가능하면 css로 작업할 것--> */
+        ol#ol2 {
+            /* sqpurple 이미지 로딩에 실패할 때, hiragana 가 뜬다 */
+            /* 줄여서 쓰는 property 가 있다 */
+            list-style: hiragana inside url("sqpuple.gif");
+        }
+
+        /* att-type 대신 css 로 활용하여  type 바꾸도록하기 */
+        ol#ol1 {
+            list-style-type: upper-alpha;
+            list-style-position: inside;
+            list-style-image:url(sqpurple.gif);
+         
+        }
+        ul {
+            list-style-type: hiragana;
+        }
+    </style>
+</head>
+<body>
+    <ol id="ol2">
+        <li>Lorem.</li>
+        <li>Ea.</li>
+        <li>Minima?</li>
+    </ol>
+    <hr>
+    <!-- 표시되는 모양 바꾼다 att_type / 가능하면 css로 작업할 것-->
+    <!-- <ol type="a"></ol> -->
+    <ol id="ol1">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, atque, placeat consequuntur vel accusantium adipisci exercitationem laborum ipsa in, impedit repudiandae inventore quas incidunt culpa! Accusamus est nesciunt fugiat facilis!</li>
+        <li>Quos mollitia optio, hic facilis laudantium ut asperiores consequatur tempora cum velit dolorum molestias libero quas voluptatem minus, harum praesentium nihil accusantium, odit fugit omnis exercitationem dicta repellat! Sunt, obcaecati.</li>
+        <li>Ducimus ex eaque facilis odit corporis, voluptatibus veniam architecto, sed accusantium similique tenetur soluta. Eligendi laudantium dolor adipisci, vero ut nisi temporibus voluptate reprehenderit ullam, dolorum, error id! Hic, nemo?</li>
+        <li>Nam eligendi rerum fugiat repellat deleniti. Ut sint quis earum corporis necessitatibus quisquam sunt. Inventore repellendus quia dolores voluptatibus impedit ipsum quisquam magnam consectetur! Iste dolore doloremque ea suscipit cumque.</li>
+    </ol>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Ipsam, ullam quam?</li>
+        <li>Quisquam, sint earum.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+package kr.co.ca;
+
+import com.naver.Bow;
+import com.naver.Hammer;
+import com.naver.Hero;
+import com.naver.Monster;
+import com.naver.Sword;
+import com.naver.Weapon;
+
+public class Process2 {
+	public Process2() {
+		
+		Monster m = new Monster(200);
+		
+		Weapon[] basicWeapon = new Weapon[] {new Bow("bow", 10), new Sword("sword", 20), new Hammer("hammer", 30)};
+		
+		int hasWeaponIdx = 0;
+		Hero fighter = new Hero(basicWeapon, hasWeaponIdx);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

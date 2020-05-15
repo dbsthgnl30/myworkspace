@@ -1,0 +1,44 @@
+package com.naver;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test1 {
+	
+	public void me4() {
+		Map<String, Integer> map4 = new HashMap<String, Integer>();
+		map4.put("hello", 1);
+		map4.put("world", 2);
+		map4.put("good", 3);
+		map4.put("morning", 4);
+		
+		int a =  map4.get("hello"); // autounboxing
+		System.out.println(a);
+		int b = map4.get("world");
+		System.out.println(b);
+	}
+	
+	public void me3() {
+		Map<Integer, String> map3 = 
+				new HashMap<Integer, String>();
+		map3.put(1, "hello");
+		map3.put(101, "hello");
+		map3.put(1, "world"); //값이 hello -> world로 바뀌었다고 생각함! 
+		map3.put(2, "!!!!!");
+		
+		System.out.println(map3); // map은 중괄호 ( list, set -> 대괄호)
+		
+	}
+	
+	public void me2() {
+		Map<Pear, Apple> map2 = 
+				new HashMap<Pear, Apple>();
+	}
+	
+	public void me1() {
+		Map<String, String> map1 = 
+				new HashMap<String, String>();
+		
+	}
+	
+}

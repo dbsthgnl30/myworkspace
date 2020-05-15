@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("#btn1").click(function(){
+            $("#para1").text("hello Javascript");
+            $("#para2").text("hello <strong> javascript </strong> javajava");
+            // html으로 넣은건 tag 가 적용된다
+            $("#para3").html("hello <strong> javascript </strong> javajava");
+
+            $("#input1").val("hello js"); //값변경
+
+            //attr("명",값)
+            $("img").attr("src","../Web/img/장승조.jpg");            
+        })
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <p id="para1">1</p>
+        <p id="para2">2</p>
+        <p id="para3">3</p>
+        <input type="text" id="input1" class="form-control">
+        <img src="../Web/img/애니어그램.png" alt="애니어그램" width="200px">  
+        <!-- 이미지는 inline -->
+        <br>
+        <button class="btn btn-info" id="btn1">값변경</button>
+    </div>
+</body>
+</html>

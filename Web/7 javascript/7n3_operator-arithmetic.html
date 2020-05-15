@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+    </div>
+    <script>
+        var a = 10;
+        var b = 3;
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(a ** b); //몇 승
+
+        //++ -- : 단항 연산자
+        a++;
+        console.log(a);
+        b--;
+        console.log(b);
+
+        //위와 유사하다. 미세한 차이 있지만 구별 어려움 
+        --a;
+        ++b;
+        console.log(a);
+        console.log(b);
+
+        //연산자 우선순위 ()괄호가 최우선
+        console.log(3 + 4 * 5);
+        console.log((3 + 4) * 5);
+
+        // string+ 
+        var c ="Hello";
+        var d ="world";
+        console.log(c + d);
+        console.log("Hello" + "World");
+
+        console.log("3" + "4");
+        console.log("3" + 4);  //결과가 text 로 나온다~ 
+        console.log(3 + "4");
+        
+        console.log(3 + 4 + "car");  //7car
+        console.log(3 + (4 + "car"));  //34car
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            border: 5px solid black;
+            margin-bottom: 20px;
+        }
+        h1{
+            width:30%;
+            margin: auto;
+        }
+        h6 {
+            width: 30%;
+        }
+        /* inline 확인용 */
+        p {
+            width: 30%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- block element 는 코드랑은 상관없다. 배치 아무렇게나 해도 -->
+    <div>
+        div
+    </div>
+    <h1>
+        h1
+    </h1> 
+    <h6>
+        h6
+    </h6> 
+    <p>
+        p
+    </p>
+   
+    <!-- inline element: 필요한 만큼만 너비 갖는다 -->
+    <!-- #링크는 생기는데 이동하지 않음. 가짜링크 -->
+    <a href="#">link</a>
+    <b>b</b>
+    <i>i</i>
+    <span>span</span>    
+    lorem ipsun dolor sit amet
+<!-- inline elem 가운데 배치하기 위해선 감싸고 text-aline 을 준다
+    (block elem은 margin:auto ) -->
+    <div style="text-align: center;">
+        <span>span</span>
+    </div>
+    
+</body>
+</html>

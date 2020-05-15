@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+        .main-container {
+            position: relative;
+            background-color: lightgrey;
+            padding: 3px;
+        }
+        .submenu {
+            position: absolute;
+            left: 110px;
+            top: 0;
+            background-color: lightpink;
+            padding: 3px;
+            display: none;
+        }
+        .side-bar:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- .main-container>.side-bar*3>lorem1+.submenu*5>lorem1 -->
+    <div class="main-container">
+        <div class="side-bar">
+            양식
+            <div class="submenu">스테이크</div>
+            <div class="submenu">스파게티</div>
+            <div class="submenu">리조또</div>
+            <div class="submenu">감바스</div>
+            <div class="submenu">피자</div>
+        </div>
+        <div class="side-bar">
+            중식
+            <div class="submenu">Est!</div>
+            <div class="submenu">Error?</div>
+            <div class="submenu">Temporibus.</div>
+            <div class="submenu">Pariatur.</div>
+            <div class="submenu">Qui?</div>
+        </div>
+        <div class="side-bar">
+            일식
+            <div class="submenu">Inventore.</div>
+            <div class="submenu">Ullam!</div>
+            <div class="submenu">Fugiat?</div>
+            <div class="submenu">Ea?</div>
+            <div class="submenu">Suscipit.</div>
+        </div>
+    </div>
+</body>
+</html>

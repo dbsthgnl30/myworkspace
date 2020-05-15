@@ -1,0 +1,34 @@
+package com.naver;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test1 {
+
+	//list 4 객체는 1,1,2,3,4,8,11을 입력하는 기능을 가지고있다.
+	public void me4() {
+		List<Integer> list4 = new ArrayList<Integer>();
+		list4 = 
+		
+	}
+	
+	
+	public List  me3(List<String> list3) {
+		return list3;
+	}
+	
+	public void me2() {
+		List<Apple> list2 = new ArrayList<Apple>();
+	}
+	
+	public void me1() {
+		//quiz me1()메소드는 java.util.List로 만들어진  list라는 변수명을 가지고 있다. 
+		//단, 이 list엔느 3,4,5...등의 정수를 저장할 수 있다.
+		//ArrayList 학습중 
+		
+		List<Integer> list  = new ArrayList<Integer>();
+	}
+	
+	
+	
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+
+        $("button").click(function(){
+            var bt = $(this).text();
+            var li = $("<li />");
+            li.text(bt);
+            $("#result").append(li);
+            
+            $("li").click(function(){
+                //만약 this 대신 "li"를 쓰면 li 쓴것이 한꺼번에 다 지워짐 
+                $(this).remove();
+            });            
+        
+        });    
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-outline-danger btn-block my-2">캘리포니아</button>
+        <button class="btn btn-outline-danger btn-block my-2">라스베거스</button>
+        <button class="btn btn-outline-danger btn-block my-2">뉴욕</button>
+        <button class="btn btn-outline-danger btn-block my-2">워싱턴</button>
+        <button class="btn btn-outline-danger btn-block my-2">플로리다</button>
+        <ul id="result">
+            <h1>미쿡</h1>
+           
+        </ul>
+    </div>
+</body>
+</html>

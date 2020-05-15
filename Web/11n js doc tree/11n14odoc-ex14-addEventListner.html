@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- // 함수를 값으로 받아서 실행시킬 수 있는 3가지 방법(이해할것)   -->
+
+
+    <button id="button1">클릭</button>
+    <button id="button2">클릭2</button>
+    <button id="button3">클릭3</button>
+    <!-- // 1번째 방법 attr 이용  -->
+    <button onclick="setIronman()" class="btn btn-info">아이언맨</button>
+    <script>
+       
+
+    //2번재 방법  onclick attrs 에다가 function를 넣는다. 
+        document.getElementById("button1").onclick = function () {
+            console.log("버튼 클릭됨");
+        }
+
+        //실행한 것 아니다.그냥 함수 넣은 것 .  ()둥근괄호 넣으면 실행한 것 
+        document.getElementById("button2").onclick = myfunc;
+
+        function myfunc() {
+            console.log("두번째 버튼 클릭됨");
+        }
+
+    //3번째 방법 
+        var button3 = document.getElementById("button3");
+        // attr (property) 혹은 method 에 등록가능 
+        // addEventListener(메소드)는 파라미터를 값으로 받을 수 있다. 2개의 값을 가진다. 
+        // addEventListener(1, 2) -> 1 실행하면 2 실행한다.
+        button3.addEventListener("click", function () {
+            console.log("세번째 버튼 클릭됨");
+        });
+
+    </script>
+</body>
+
+</html>

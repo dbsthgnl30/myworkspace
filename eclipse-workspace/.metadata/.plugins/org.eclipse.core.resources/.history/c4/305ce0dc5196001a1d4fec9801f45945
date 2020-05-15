@@ -1,0 +1,36 @@
+package com.naver;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class MemberDTO {
+	
+	public void insert(MemberDTO dto) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "insert into TBL_member(id,name,age) values(?,?,?)";
+		
+		try {
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			System.out.println("connection success");
+			
+			pstmt = conn.prepareStatement(sql);
+			
+		} catch (Exception e) {
+			System.out.println("connection fail");
+			e.printStackTrace();
+		} finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				
+				if(conn != null) conn.close();
+				
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		
+	}
+	
+}

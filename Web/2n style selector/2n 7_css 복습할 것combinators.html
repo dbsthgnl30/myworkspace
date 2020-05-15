@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1,p {
+            color: blue;
+        }/* 조합셀렉터 */
+
+        p.spec.note {
+            color: red;
+        }/* 모두해당 */
+
+        .container h2{
+            color: yellow;
+        }/* '띄어쓰기' Descendant Selector */
+
+        .container > h2 {
+            color: magenta;
+        }/* '> child Selector */
+
+        .container + h2 {
+            color: blue;
+        }/* '+' Adjacent인접한 Sibling Selector */
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 간편 작성법 #id .class . class -->
+    <h1 id="id" class="heading on"></h1>
+    <!-- 작성 시  #id.heading.on -->
+    <div class="hold on"></div>
+    <!-- 작성 시  .hold.on -->
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <hr>
+
+    <div class="container">
+        <h2>Lorem, ipsum dolor.</h2>
+        <div>
+            <h2>Lorem ipsum dolor sit.</h2>
+        </div>
+
+    </div>
+<hr>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p class="spec note">Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+</html>

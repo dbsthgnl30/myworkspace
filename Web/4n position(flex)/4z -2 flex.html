@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .class {
+        border: 1px solid black;
+        display: box;
+        
+    }
+    .class:nth-child(1) {
+        background-color: maroon;
+        font-size: 30px;
+        flex: 4;
+       
+    }
+    .class:nth-child(2) {
+        background-color: mediumaquamarine;
+        font-size: 50px;
+        flex: 1;
+       
+    }
+    .class:nth-child(3) {
+        background-color: red;
+        font-size: 10px;
+       
+    }
+    .container {
+        display: flex;
+        background-color: mediumpurple;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .fle {
+        display: flex;
+        flex-direction: colum;
+    }
+    .fle span:nth-child(1) {
+        background-color: rosybrown;
+    }
+    .fle span:nth-child(2) {
+        background-color: orange;
+    }
+    .fle span:nth-child(3) {
+        background-color: yellowgreen;
+    }
+
+    
+</style>
+</html>
+<head></head>
+<body>
+    <div class="container">
+        <div class="class">1.</div>
+        <div class="class">2</div>
+        <div class="class fle">
+            <span>red-1</span>
+            <span>red-2.</span>
+            <span>red-3</span>
+        </div>
+    </div>
+
+    
+</body>

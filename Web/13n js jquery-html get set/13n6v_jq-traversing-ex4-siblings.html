@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+        
+    </style>
+    
+    <script>
+    $(document).ready(function() {
+        //모든 형제들 
+        $("#myHeading").siblings().css("font-size", "60px");
+
+        //next는 코드 기준으로는 아래, 트리 기준으로는 오른쪽
+        $("#myHeading").next().css("color","gold");
+
+        //오른쪽 모든놈 
+        $("#myHeading").nextAll().css("border-left", "2px solid red");
+        // .nextUntil 는 selector를 가짐. 거기까지 , 자기자신도 빼고
+        $("#myHeading").nextUntil(".until").css("font-family", "monospace");
+
+
+        $("#myHeading").prev().css("border", "3px solid grey");
+        $("#myHeading").prevAll().css("font-style", "italic");
+        $("#myHeading").prevUntil("from").css("background-color", "powderblue")
+
+        //from ~until (응용)
+        $(".from").nextUntil(".until").css("border-right", "10px solid black")
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1 class="from">from, Suscipit, distinctio doloremque.</h1>
+        <h1>Dolores, dolorum perspiciatis?</h1>
+        <h1>Dicta, earum libero?</h1>
+        <h3 id="myHeading" style="color: palevioletred;">기준은 나야나 ipsum.</h1>
+        <h1>Provident, magni perferendis!</h1>
+        <h1>Ipsam, tempore veniam?</h1>
+        <h1>Fugit, sunt delectus?</h1>
+        <h1 class="until">Until, Pariatur, quas aperiam.</h1>
+        <h1>Autem, veritatis officia.</h1>
+    </div>
+</body>
+</html>

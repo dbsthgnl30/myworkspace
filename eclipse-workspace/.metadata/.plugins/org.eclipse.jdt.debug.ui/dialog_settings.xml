@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=SimpleEx200429/src&amp;lt;aMain{MainEx.java[MainEx&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=SimpleEx200429/src&amp;lt;cMain{MainEx.java[MainEx&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=CollectionTest200512/src&amp;lt;co.kr{Generic.java[Generic&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="523"/>
+			<item key="DIALOG_WIDTH" value="406"/>
+			<item key="DIALOG_X_ORIGIN" value="934"/>
+			<item key="DIALOG_Y_ORIGIN" value="171"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|맑은 고딕"/>
+		</section>
+	</section>
+</section>

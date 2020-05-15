@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <input type="text" id="input1" class="form-control">
+        <button onclick="add()" class="btn btn-info"><i class="fas fa-plus"></i></button>
+        <button onclick="remove()" class="btn btn-danger"><i class="fas fa-minus"></i></button>
+        <h1 id="result"></h1>
+    </div>
+    <script>
+        // 지난주 for 로 + - 버튼 만들었던 것! 
+
+        var array = [];
+
+        function add() {
+            var n = document.getElementById("input1").value;
+
+            array.push(n);
+            //push 되는순간 array.length 길어짐 
+
+            var text = "";
+            //while 작성
+            var i = 0;
+            while (i < array.length) {
+                text += "<li>" + array[i] + "</li>";
+                i++;
+            }
+            document.getElementById("result").innerHTML = text;
+        }
+
+        
+        function remove() {
+                array.pop();
+
+                var text = "";
+                var i = 0
+                while( i < array.length) {
+                    text += "<li>" + array[i] + "</li>";
+                    i++;
+                }
+                document.getElementById("result").innerHTML = text;
+            }
+            //var c = ["dd", "3wf", "wdf"]  각 값에 해당하는 번호가 있다. 0부터 시작 
+            // array.lenght는 앞에서부터 3개 (값은 0부터 시작하는 것이고)
+
+    </script>
+</body>
+
+</html>

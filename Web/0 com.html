@@ -1,0 +1,149 @@
+
+<!-- #elem1>hr -->
+<div id="elem1">
+    <hr>
+</div>
+
+우클릭 검사 : ctrl shit i 
+]: attrs selector 
+input: ->type 만들어짐 
+{} :글자침 
+
+<!-- html>style^head+body -->
+<html>
+<style></style>
+</html>
+<head></head>
+<body>
+    
+</body>
+
+<!-- div.normal>lorem -->
+<div class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima dicta fugit beatae adipisci error, mollitia repudiandae quas ex itaque numquam perspiciatis quasi quaerat molestiae sed qui sequi quae dignissimos.</div>
+
+^: 하나 위로 올라가서~~~ 
+end 키 
+
+h1{자바웹프로그래밍}
+<h1>자바웹프로그래밍</h1>
+
+
+<!-- #링크는 생기는데 이동하지 않음. 가짜링크 -->
+<a href="#">link</a>
+
+selector {margin: auto;} :가운데로 오게함
+width: 30%;
+
+div#div$*3>lorem10
+<div id="div1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, inventore.</div>
+<div id="div2">Maxime labore laborum numquam. Quas commodi neque a fuga inventore?</div>
+<div id="div3">Laborum voluptatem quasi distinctio dicta amet minus minima ad molestias.</div>
+
+div.positioned>lorem10+div.absolute>lorem10
+    <div class="positioned">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, neque?
+        <div class="absolute">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</div>
+    </div>
+
+    .main>lorem1+.sub>div*3>lorem1
+    <div class="main">
+        Lorem.
+        <div class="sub">
+            <div>Lorem.</div>
+            <div>Ullam?</div>
+            <div>Consectetur?</div>
+        </div>
+    </div>
+
+    .row>.col-3>lorem1^.col-6>lorem1^.col-3>lorem1 
+        <div class="row">
+            <div class="col-3">Lorem.</div>
+            <div class="col-6">Lorem.</div>
+            <div class="col-3">Lorem.</div>
+        </div>
+
+<!-- 메뉴판 만들때~~~ -->
+        .main-container>.side-bar*3>lorem1+.submenu*5>lorem1
+    <div class="main-container">
+        <div class="side-bar">
+            Lorem.
+            <div class="submenu">Lorem.</div>
+            <div class="submenu">Delectus?</div>
+            <div class="submenu">Ad?</div>
+            <div class="submenu">Veritatis?</div>
+            <div class="submenu">Accusamus?</div>
+        </div>
+        <div class="side-bar">
+            Magni!
+            <div class="submenu">Est!</div>
+            <div class="submenu">Error?</div>
+            <div class="submenu">Temporibus.</div>
+            <div class="submenu">Pariatur.</div>
+            <div class="submenu">Qui?</div>
+        </div>
+        <div class="side-bar">
+            Quae.
+            <div class="submenu">Inventore.</div>
+            <div class="submenu">Ullam!</div>
+            <div class="submenu">Fugiat?</div>
+            <div class="submenu">Ea?</div>
+            <div class="submenu">Suscipit.</div>
+        </div>
+    </div>
+
+
+    input:button.btn.btn-primary
+    <input type="button" value="" class="btn btn-primary">
+
+    button.btn*8>lorem1
+    <button class="btn">Lorem.</button>
+    <button class="btn">Eaque!</button>
+    <button class="btn">Fuga.</button>
+    <button class="btn">Consequuntur.</button>
+    <button class="btn">Neque!</button>
+    <button class="btn">Nam?</button>
+    <button class="btn">Eos.</button>
+    <button class="btn">Excepturi!</button>
+
+
+    ul.pagination>li.page-item*5>a.page-link>{$}
+    <ul class="pagination">
+        <li class="page-item"><a href="" class="page-link">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">4</a></li>
+        <li class="page-item"><a href="" class="page-link">5</a></li>
+    </ul>
+
+
+    <!-- 이전페이지 만들기 -->
+    li.page-item>a.page-link{&lt;}
+    <li class="page-item"><a href="" class="page-link">&lt;</a></li>
+
+
+     <!-- 다음페이지만들기 -->
+     li.page-item>a.page-link{&gt;}
+     <li class="page-item"><a href="" class="page-link">&gt;</a></li>
+
+     .dropdown>button.btn.btn-primary+.dropdown-menu>a.dropdown-item*3>lorem1
+     <div class="dropdown">
+         <button class="btn btn-primary"></button>
+         <div class="dropdown-menu">
+             <a href="" class="dropdown-item">Lorem.</a>
+             <a href="" class="dropdown-item">Aliquam.</a>
+             <a href="" class="dropdown-item">Tempore.</a>
+         </div>
+     </div>
+
+
+     <!-- input:button.btn.btn-primary -->
+    <input type="button" value="lorem1" class="btn btn-primary">
+
+
+    // js 바로 엔터 사용 가능 
+    document.getElementById("input1").addEventListener("keydown",
+        function (e) {
+            if (e.key === "Enter") {
+                addItem();
+            }
+        });

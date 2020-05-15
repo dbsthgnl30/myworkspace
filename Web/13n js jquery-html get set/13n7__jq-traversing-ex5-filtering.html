@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+        .container {
+            color: ;
+        }
+    </style>
+    <script>
+    $(document).ready(function() {
+        //.first()는 첫번째 인 것 기준이다. 문서에 나오는(보이는)순서대로
+        $("h1").first().css("color", "gold");
+        $("h1").last().css("color", "red");
+        //eq는 0번재 부터 count
+        $("h1").eq(5).css("color", "blue");
+
+        $("h1").filter(".myhead").css("color", "seagreen");
+        // $("h1.myhead").css("color", "yellow") //위와 동일
+
+        $("h1").not(".myhead").css("text-decoration", "underline");
+        
+    
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Optio, porro omnis.</h1>
+        <h1 class="myhead">Quis, dolore iste.</h1>
+        <div>
+            <h1 class="myhead">Omnis, ad porro!</h1>
+            <h1>Harum, consequuntur cum!</h1>
+            <h1> eq 적용~~~Dignissimos, ipsa incidunt.</h1>
+        </div>
+        <h1>Dolore, minima odio!</h1>
+        <h1>Cupiditate, necessitatibus? Sapiente?</h1>
+        <h1>Provident, nulla minima.</h1>
+        <h1>Ea, harum iusto.</h1>
+    </div>
+</body>
+</html>

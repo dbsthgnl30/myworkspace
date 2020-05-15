@@ -1,0 +1,13 @@
+package c;
+
+import java.util.Scanner;
+
+import kr.co.ca.Command;
+
+public class UpdateCommand implements Command {
+	@Override
+	public void execute(Scanner sc) {
+		// TODO Auto-generated method stub
+		
+	}
+}

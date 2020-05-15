@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 새로운 elem 추가한다.  -->
+    <script>
+        
+        //함수는 바로 실행되는게 아니어서 어디에 있든 상관없다. 
+
+        function addElement() {
+            var newElem =  document.createElement("p");
+            newElem.innerHTML = "새로운 요소" + parseInt(Math.random() *100 + 1);
+            document.getElementById("result").appendChild(newElem); //아래로 새로운게 생김 append: 덧붙이다 (접미사는 suffix)
+            // document.getElementById("result").prepend(newElem); //위로 새로운게 생겨서 기존 것 아래로 내려감(prepend: 접두사)
+        }
+
+    </script>
+
+</head>
+<body>
+    <button onclick="addElement()">추가</button>
+    <div id="result"></div>
+    
+</body>
+</html>

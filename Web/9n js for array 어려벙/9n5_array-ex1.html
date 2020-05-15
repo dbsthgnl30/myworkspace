@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class='container'>
+    </div>
+    <script>
+    var a = 3;
+    var b = "Hello";
+
+    // 배열은 여러개의 값을 저장할 수 있다. 
+    var c = ["hi", "hello", "java", "html", 99, 88]; 
+    // js는 타입에 안민감. 타입에 상관없이 넣을 수 있다. 
+    //각 값에 해당하는 번호가 있다. 0부터 시작 
+    var d = []; // 빈배열   
+
+    console.log(a);
+    console.log(c[0]); // 0번째 값에 접근하겠다. 
+    console.log(c[1]);
+    console.log(c[2]);
+    console.log(c[3]);
+    console.log(c[4]);
+    console.log(c[5]);
+
+    a = 5;
+    b = "hi";
+
+    //배열의 값 변경 
+    c[0] = "ironman";
+    c[1] = "captain";
+    c[2] = "black";
+    c[3] = "red";
+    c[4] = "blue";
+    c[5] = 100;
+
+     // console.log('----for 문 사용 ')   
+    for (var i = 0; i < 7; i++) {
+        console.log(c[i]);
+    }
+    //위의 내용과 동일 
+    for (value of c) {
+        console.log(value);
+    }
+
+    // 배열에 값을 추가 push 라는 method  (배열이 객체)
+    // 객체는 속성(값)과 기능(행동). 
+    // 할것들 묶어놓은게 함수. 함수가 객체 안에 있으면 method
+    // 함수와 parameter
+    console.log("------값 추가-----");
+    
+    c.push("pink");
+    console.log(c[6]);
+
+    // 배열의 값을 제거 
+    console.log("------값 제거-----");
+    c.pop(); // 마지막 값이 제거 
+    for (var i = 0; i < 6; i++) {
+        console.log(c[i]);
+    }
+
+    //배열의 길이 확인
+    console.log("---배열의 길이");
+    console.log(c.length);
+
+    // 배열의 길이로 for 사용
+   
+         console.log("------배열의 길이를 for에서 사용");
+    // 길이가 얼마나 되는지 모를때 적음~~ 
+    for (var i = 0; i < c.length; i++) {
+        console.log(c[i]);
+    }
+    
+    
+    
+
+    
+    
+    </script>
+</body>
+</html>

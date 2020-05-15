@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <!-- jq 작성 시 어떤건 " 붙고 어떤건 안붙고>>css property 명은 - 가 붙을 수 있다. 키워드,부호가 객체의 property 명으로 작성될 경우 " "붙힌다. -->
+    <script>
+    $(document).ready(function() {
+        $(".head-row").click(function() {
+            //차례로 하나씩 실행
+            //table 에 .animate 가 적용이 안되는 것 같다. 
+            $(".data-row").animate({
+                height: "100px"
+            })
+            $(".data-row").animate({
+                "font-size": "25px"
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <div class="table">
+            <div class="head-row">
+                <div>Lorem.</div>
+                <div>Cumque!</div>
+                <div>Assumenda?</div>
+            </div>
+            <div class="data-row">
+                <div>Lorem.</div>
+                <div>Minus.</div>
+                <div>Ullam.</div>
+            </div>
+            <div class="data-row">
+                <div>Delectus.</div>
+                <div>Ab.</div>
+                <div>Optio?</div>
+            </div>
+            <div class="data-row">
+                <div>Rem?</div>
+                <div>Ad!</div>
+                <div>A.</div>
+            </div>
+            <div class="data-row">
+                <div>Sapiente?</div>
+                <div>Officiis.</div>
+                <div>Velit?</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

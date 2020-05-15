@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .item:nth-child(1) {
+        background-color: red;
+        font-size: 20px;
+        /* 각각의  item 에 적용하는  flex (남아있는 공간을 다 차지한다) 1은 비율이다.*/
+        flex: 1;
+        /* order !! 배치 순서를 바꾼다 1은 0보다 크니까 오른쪽 배치  */
+        
+    }
+    .item:nth-child(2) {
+        /* width 는 기본값이고 나머지 flex 적용 */
+        width: 200px;
+        background-color: blue;
+        font-size: 10px;
+        /* 남아있느 공간의 2/3(위에 것 고려) */
+        flex: 2;
+    }
+    .item:nth-child(3) {
+        /* 3번째 값 고정된 것 가지고 싶다?  */
+        width: 200px;
+        background-color: yellow;
+        font-size: 5px;
+        
+    }
+    /* 감싸고 있는것에 flex를 주면 안에 있는 것들이 옆으로 배치된다 */
+    .container {
+        display: flex;
+        /* flex 방향 (order 지우고!) row, column */
+        flex-direction: row;
+        height: 200px;
+        background-color: grey;
+        /* 위아래로 배치 align-items:/ 가장 높은 높이~  stretch 기본값
+        https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 참고  */
+        align-items: stretch;
+        /* 좌우로 배치 justify-content: flex-start 기본값, flex-end,center,spacebetwwen ; */
+        justify-content: flex-start;
+    }
+
+    /* class 추가해서 flex 안에 flex 만들기 */
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    flex 안에 flex를 줘서 원하는 레이아웃을 만들 수 있다
+    .inner-container div {
+        flex: 1;
+    }
+    .inner-container div:nth-child(1) {
+        background-color: mediumslateblue;
+    }
+    .inner-container div:nth-child(2) {
+        background-color: indigo;
+    }
+    .inner-container div:nth-child(3) {
+        background-color: indianred
+    }
+
+</style>
+</html>
+<head></head>
+<body>
+    <!-- 감싸는 elem 만든다  -->
+    <div class="container">
+        <div class="item">red</div>
+        <div class="item">blueLorem ipsum dolor sit ame  vero voluptatum incidunt fu</div>
+        <!-- flex 박스 활용하기 위해 class 추가 -->
+        <div class="item inner-container">yellow
+            <div>Lorem.</div>
+            <div>Eaque!</div>
+            <div>Doloremque.</div>
+        </div>
+    </div>
+    <!-- float는 다음에 오는 elem 에 영향도 안준다 -->
+    <div class="normal">Lorem ipsum dolor sit amet.</div>
+</body>

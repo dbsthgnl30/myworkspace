@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .dark {
+            background-color:  black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addClass()">클래스추가</button>
+    <button onclick="removeClass()">클래스제거</button>
+    <button onclick="toggleClass()">클래스제거</button>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    
+    <script>
+        function toggleClass() {
+            // classList라는 property에 있는 toggle 이라는 method
+            document.getElementById("head1").classList.toggle("dark");
+        }
+
+        function removeClass() {
+            document.getElementById("head1").classList.remove("dark");
+        }
+
+        function addClass() {
+            // classlist 는 property/ add는 method
+            // class 사용 :스타일 주거나 elem 선택  
+            // .앞에있는 것: object
+            //  getElementById("head1") , add("dark"): method(parameter)
+            // classList 처럼 아무것도 없는것:  property 
+            document.getElementById("head1").classList.add("dark");
+        }
+
+
+
+    </script>
+</body>
+</html>

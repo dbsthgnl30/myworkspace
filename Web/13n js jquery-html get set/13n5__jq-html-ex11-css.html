@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("#btn1").click(function(){
+            $("#result1").css("background-color", "gold");
+        });
+
+        $("#btn2").click(function(){
+            $("#result1").css("font-size", "50px");
+        });
+
+        $("#btn3").click(function(){
+            //하나 이상을 바꿀 대는 객체를 넣어준다. 
+            // css 에서는 ; 로 구별, js 문법에서는 , 로 구별 
+            $("#result1").css({
+                "background-color": "gold",
+                "font-size": "100px"
+            })
+        });
+    
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-info" id="btn1">배경색</button>
+        <button class="btn btn-warning" id="btn2">폰트 크기</button>
+        <button class="btn btn-danger" id="btn3">둘 다</button>
+
+        <h1 id="result1">Lorem, ipsum dolor.</h1>
+    </div>
+</body>
+</html>

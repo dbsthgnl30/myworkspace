@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <button onclick="lotto()" class="btn btn-warning">로또</button>
+        <h1 id="result"></h1>
+    </div>
+    <script>
+        function lotto() {
+            var numbers = [];
+
+            while (numbers.length < 6) {
+                var newNumber = parseInt(Math.random() * 45 + 1);
+
+                // 중복제거 새로 생성된 값이 이미 존재하면 안넣는다
+                if (!numbers.includes(newNumber)) {
+                    numbers.push(newNumber);
+                }
+
+              
+                console.log(newNumber);
+                
+            }
+            console.log("완성후...");
+            
+
+            //참고 그냥 보여주는 것! 
+            var text = "";
+            while (numbers.length > 0) {
+                var removedNumber = numbers.pop();
+                text += removedNumber + "<br>";
+                console.log(removedNumber);
+                
+            }
+            document.getElementById("result").innerHTML = text;
+
+        }
+
+    </script>
+</body>
+
+</html>

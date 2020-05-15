@@ -1,0 +1,35 @@
+package b;
+
+import java.util.List;
+import java.util.Scanner;
+
+import kr.co.ca.Command;
+import kr.co.ca.DB;
+import kr.co.ca.MemberDTO;
+
+public class SelectCommand implements Command {
+	
+	@Override
+	public void execute(Scanner sc) {  //scanner sc 필요없으나 지우면 안됨 
+		
+		List<MemberDTO> list = DB.db; /////
+		
+		
+		for (int i =0; i < list.size(); i ++) {
+			
+			MemberDTO dto = list.get(i);
+			
+			//MemberDTO dto1 = new MemberDTO();  /////
+			//dto1 = list.get(i);  /////
+			
+			System.out.println(dto);  //dto.toString
+			
+			//만약 dto 사용하고 싶으면 dto.getid 등등 하기~ 
+			System.out.println(dto.getId());
+			System.out.println(dto.getName());
+		}  
+		
+		
+		
+	}
+}

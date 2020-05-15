@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>input element attributes</h1>
+    <h3>value</h3>
+
+
+    <input type="text"><br>
+    <!-- value: 기본값 -->
+    <input type="text" value="John">
+    <br>
+    
+    <!-- readonly:값을 변경할 수 없게한다. 전송은 된다.-->
+    <h3>readonly</h3>
+    <input type="text" readonly value="John">
+
+    <!-- disabled:값을 변경할 수 없게한다. 전송도 안된다.
+    값은 있어도 되고 없어도 된다. disabled 만 있어도됨.  readonly 도 마찬가지-->
+    <h3>disabled</h3>
+    <input type="text" disabled value="John">
+
+    <h3 >hidden</h3>
+    <input  type="text" hidden value="John">
+
+    <!-- 입력 할 수 있는 글자의 최대 갯수 -->
+    <h3>maxlength</h3>
+    <input type="text" maxlength="10">
+
+    <!-- input elem의 크기. 보여지는것. 더 입력은 가능 -->
+    <h3>size</h3>
+    <input type="text" size="10">
+
+    <!-- 화살표로 입력가능  -->
+    <h3>min,max</h3>
+    <input type="number" min="1" max="5">
+
+    <!-- 힌트를 준다. 입력을 하면 값이 사라진다. -->
+    <h3>placeholder</h3>
+    <input type="text" placeholder="이름을 입력하세요">
+
+</body>
+</html>

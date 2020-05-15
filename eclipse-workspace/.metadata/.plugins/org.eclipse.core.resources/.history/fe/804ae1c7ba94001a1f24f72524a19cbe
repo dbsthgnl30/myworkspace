@@ -1,0 +1,15 @@
+package com.naver;
+
+public class Process {
+	
+	public Process() { //여기에 때려박기 (메인메소드에 할 것 여기에 다 넣기 ) 
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

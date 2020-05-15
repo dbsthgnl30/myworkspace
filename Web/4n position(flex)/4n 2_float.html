@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div.float {
+            border: 1px solid black;
+            width: 100px;
+            height: 200px;
+            /* 살짝 떠서 배치됨 / float 정상적인 배치에서 빠짐.*/
+            float: left ;
+        }
+        div.float:nth-child(3) {
+            height: 100px;
+            float: right;
+        }
+
+        .normal {
+            border: 1px solid black;
+            /* clear- 뭐를 의식할건지: left or right,both /float를 피해서 배치된다 */
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="float">1</div>
+    <div class="float">2</div>
+    <div class="float">3</div>
+
+    
+
+    <div class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae repellendus praesentium eligendi molestias, earum provident iste ab beatae quisquam consequuntur illo vero obcaecati rem nemo fuga, nobis consectetur iure?</div>
+    
+</body>
+</html>

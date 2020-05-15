@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            background-color: cadetblue;
+        }
+        #elem1 {
+            height: 200px;
+            width: 300px;
+        }
+        /* border-box ..박스 사이즈 맞춰주나.. 콘텐트 사이즈 고민해야 */
+        #elem2 {
+            height: 200px;
+            width: 300px;
+            border: 50px solid black;
+            box-sizing: border-box;
+        }
+        #elem3 {
+            height: 200px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        #elem3:hover {
+            border-bottom: 5px solid red;
+        }
+        /* 부모를 기준으로 상대적인 값  % */
+        #elem4 {
+            height: 200px;
+            width: 50%;
+        }
+        /* 화면을 기준으로! 상대적인 값 vw : viewport(창) width*/
+        #elem5 {
+            height: 200px;
+            width: 50vw;
+        }
+        #elem6 {
+            height: 200px;
+            min-width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="elem6"></div><hr>
+    <div id="elem5"></div>
+    <hr>
+    <div id="elem4">elem4</div><hr>
+    <div id="elem3"></div>
+    <hr>
+    <div id="elem2"></div>
+    <hr>
+    <div id="elem1"></div>
+</body>
+</html>

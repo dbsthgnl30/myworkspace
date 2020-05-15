@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            height: 50px;
+            background-color: cadetblue;
+
+        }
+
+        #elem1 {
+            background-color: brown;
+            border-style: dotted;
+            border-width: 10px;
+            border-color: blue;
+        }
+
+        #elem2 {
+            border-top-style: dashed;
+            border-top-width: 5px;
+            border-top-color: chocolate;
+        }
+
+        #elem3 {
+            border-right-style: solid;
+            border-right-width: 10px;
+            border-right-color: red;
+
+            border-bottom-style: double;
+            border-bottom-width: 2px;
+            border-bottom-color: blue;
+        }
+
+        #elem4 {
+            border-top: 2px solid red;
+            border-right: 10px dotted blue;
+            border-bottom: 5px double yellow;
+            border-left: 7px groove black;
+                    }
+         /* border short handed properties 4개쓰면 위에서부터 시계방향*/
+        #elem5 {
+            border-style: dotted double solid dashed;
+            border-width: 10px 2px 7px 20px;
+            border-color: red blue yellow black;
+        }            
+        /* border short handed properties 3개쓰면 위>>좌우>>아래*/
+        /* 2개쓰면 위아래>>좌우 */
+        #elem6 {
+            border-style: solid double dotted;
+            border-color: black;
+            border-width: 5px;
+        }
+        #elem7 {
+            border: 5px dashed blue;
+            border-radius: 2px 5px 7px 10px;
+        }
+        #elem8:hover {
+            border-bottom: 5px double black ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="elem8">Lorem, ipsum.</div>
+    <hr>
+    </div>
+    <div id="elem7">Lorem, ipsum.</div>
+    <hr>
+    <div id="elem6">Lorem, ipsum.</div>
+    <hr>
+    <div id="elem5">Lorem, ipsum.</div>
+    <hr>
+    <div id="elem4">Lorem, ipsum.</div>
+    <hr>
+    <div id="elem3">Lorem, ipsum.
+    </div>
+    <div id="elem2">Lorem, ipsum.</div>
+    <hr>
+    <div id="elem1">
+        <p>ddd</p>
+    </div>
+
+</body>
+
+</html>

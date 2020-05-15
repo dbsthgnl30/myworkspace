@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Command.java&apos; to &apos;MMS_200515/src/kr.co.ca&apos;&#x0D;&#x0A;- Original project: &apos;MMS_200515&apos;&#x0D;&#x0A;- Destination element: &apos;MMS_200515/src/kr.co.ca&apos;&#x0D;&#x0A;- Original element: &apos;com.naver.Command.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;kr.co.ca" element1="/src&lt;com.naver{Command.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1589526745829" units="1" version="1.0"/>
+</session>

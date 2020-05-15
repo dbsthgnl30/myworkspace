@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- p elem을 지운다!!  -->
+    
+    <!-- elem을 지운다..
+        1. 부모 먼저 알기.부모 통해 지운다
+        2. 자신이 셀프 삭제 메소드  -->
+    <!-- display none은 우리눈에만 안보이는 것 -->
+    <div id="container">
+        <p id="para1">Lorem, ipsum.</p>
+        <p id="para2">Dolor, ipsum!</p>
+        <p id="para3">Omnis, commodi!</p>
+    </div>
+    <button id="button1">삭제</button>
+
+    <button id="button2">자기자신삭제</button>
+
+    <script>
+        //1. 부모 이용해 삭제 
+
+        // 아래 내용과 동일
+       /* var button1 = document.getElementById("button1");
+        button1.addEventListener("click", function(){       }); */ 
+        
+        document.getElementById("button1").addEventListener("click",function(){
+            var parent = document.getElementById("container");
+            parent.removeChild(parent.children[1]);
+        });
+
+        // 2. 방법 메소드 
+        var button2 = document.getElementById("button2");
+        button2.addEventListener("click",function(){
+            //remove 는 익스폴로어에서는 안된다. 
+            document.getElementById("para2").remove();
+        });
+
+
+    </script>
+</body>
+</html>

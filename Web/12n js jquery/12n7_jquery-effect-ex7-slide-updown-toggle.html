@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#table1").slideDown(1000);
+            });
+            $("#btn2").click(function () {
+                $("#table1").slideUp(1000);
+            });
+            $("#btn3").click(function () {
+                $("#table1").slideToggle(2000);
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class="row">
+            <div class="col"><button class="btn btn-block btn-primary" id="btn1">슬라이드 다운 버튼</button></div>
+            <div class="col"><button class="btn btn-block btn-secondary" id="btn2">슬라이드 업 버튼</button></div>
+            <div class="col"><button class="btn btn-block btn-info" id="btn3">슬라이드 토글 버튼</button></div>
+        </div>
+        <!-- 보여졌다 사라졌다하는 것 -->
+        <div id="table1">
+            <!-- table 에 바로  효과가 안먹어서 감싸는 div 에 아이디 써서 적용  -->
+            <div class="row">
+                <div class="col">
+                    <table class="table" id="table2">
+                        <tr>
+                            <td>Lorem.</td>
+                            <td>Ipsa.</td>
+                            <td>Reiciendis!</td>
+                            <td>Ducimus!</td>
+                            <td>Ad?</td>
+                        </tr>
+                        <tr>
+                            <td>Dolorum.</td>
+                            <td>Debitis.</td>
+                            <td>Suscipit.</td>
+                            <td>Molestias!</td>
+                            <td>Eius.</td>
+                        </tr>
+                        <tr>
+                            <td>Culpa!</td>
+                            <td>Doloremque.</td>
+                            <td>Obcaecati!</td>
+                            <td>Impedit.</td>
+                            <td>Optio.</td>
+                        </tr>
+                        <tr>
+                            <td>Id.</td>
+                            <td>Veniam?</td>
+                            <td>Eum.</td>
+                            <td>Debitis!</td>
+                            <td>Error.</td>
+                        </tr>
+                        <tr>
+                            <td>Culpa?</td>
+                            <td>Natus.</td>
+                            <td>Culpa.</td>
+                            <td>Animi?</td>
+                            <td>Aut.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

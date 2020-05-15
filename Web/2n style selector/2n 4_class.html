@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* p에서 정의한 .class 명 붙여주기 */
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+        h1.red{
+            border: 5px solid skyblue;
+        }  /* h1 element 이면서 red class 인것만 적용! 동시적용  */
+
+        .blue.red{
+            background-color: goldenrod;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1 class="red">Lorem, ipsum dolor.</h1>
+
+    <!-- p*6>lorem10 : 한꺼번에 만들어짐  -->
+    <p class="blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, vel!</p>
+    <p class="blue">Hic nemo reprehenderit numquam nostrum recusandae natus accusamus blanditiis autem!</p>
+    <p class="blue red">Explicabo corrupti laboriosam necessitatibus amet blanditiis quis soluta! Architecto, facilis!
+    </p>
+    <!-- 한개의 element 여러 class 에 속할 수 있다. 쉼표 안쓰넹 -->
+    <p>Quod, ratione porro! Totam harum obcaecati ex deserunt aliquam itaque.</p>
+    <p class="red">A tempora dignissimos neque, sequi fugit amet eius veritatis. Mollitia.</p>
+    <p class="red">Cum, expedita temporibus ipsum voluptates eius quod aliquam voluptatem ducimus.</p>
+
+</body>
+
+</html>

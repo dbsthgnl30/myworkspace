@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1#head1.heading.error {
+            color: yellow;
+        }
+/* id,class, element 순서대로 단위: 100,10,1 가중치 */
+        
+        #head1 {
+            color: violet;
+        }
+        .heading.error {
+            color: teal;
+        }
+        .heading {
+            color: red;
+        }
+        /* 위에 있음에도 불구하고 class 선택자가 우선순위가 높다
+        element selector :1, class sel:10, class 여러개 sel 20, id sel: 100 */
+        /* 개발자 도구 통해 확인하기 */
+        h1 {
+            color: blue;
+        }
+
+        h1 {
+            color: crimson;
+        }
+        /* 동일할 경우 맨 밑에 있는것만 선택받음 */
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Lorem, ipsum dolor.</h1>
+    <h1 id="head1" class="heading error">Deserunt, quaerat aut?</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Dolor consectetur animi aspernatur ducimus!</p>
+    <p>Nostrum optio autem maiores qui!</p>
+</body>
+</html>

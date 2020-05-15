@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- 부모,자식 형제를 찾는 property  -->
+    <div id="container">
+        <p>Lorem, ipsum. 혜원</p>
+        <p>Iure, quidem. ***</p>
+        <p>Dignissimos, asperiores! 뽀미</p>
+    </div>
+    <script>
+        var con = document.getElementById("container")
+        //자식 elem 가져옴. 배열로 가지고 오게됨 
+        var ch = con.children;
+        console.log(ch[0]);
+        console.log(ch[1]);
+        console.log(ch[2]);
+
+        console.log(con.firstElementChild);
+        console.log(con.lastElementChild);
+
+
+        console.log(ch[1].nextElementSibling); //dignissimos
+        console.log(ch[1].previousElementSibling); //Lorem,ipsum
+
+        console.log(ch[1].parentElement); //container id를 가진 div
+        console.log(ch[1].parentElement); //container id를 가진 div(위와 동일 )
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

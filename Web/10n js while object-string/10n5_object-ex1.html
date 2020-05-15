@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+    </div>
+    <script>
+
+        //property
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+
+        var person2 = {
+            firstName: "Donald",
+            lastName: "Grump",
+            age: 60,
+            eyeColor: "brown"
+        };
+        //proprerty 읽는법 1. 
+        console.log(person.firstName);
+        console.log(person.lastName);
+        console.log(person.age);
+        console.log(person.eyeColor);
+
+        console.log(person2.firstName);
+        console.log(person2.lastName);
+        console.log(person2.age);
+        console.log(person2.eyeColor);
+
+        //property 값 변경
+        person2.eyeColor = "black";
+        person.eyeColor = "yellow";
+
+        console.log("eyeColor 변경");
+
+        console.log(person2.eyeColor);
+        console.log(person.eyeColor);
+
+        //proprerty 읽는법 2.
+        console.log(person2["eyeColor"]);
+
+        //메소드 : 함수가 객체 안에 있으면 메소드 
+        //  function name(para1, para2) {
+        //      ;
+        //      ;
+        //      return 1;
+        //  }
+
+        var person3 = {
+            firstName: "HaeWon",
+            lastName: "SHIN", 
+            age: 30,
+            eyeColor: "darkBrown",
+            walk: function () { 
+                //메소드는 값이 함수. 객체가 가지고있는기능
+                console.log("걷는다.");
+            }, 
+            name: function () {
+                return "Jane Doe";
+            }
+        };
+        console.log(person3.eyeColor);
+        person3.walk();
+        person3.name();
+        console.log(person3.name());
+
+        //this keyword
+        var person4 = {
+            firstName: "길동",
+            lastName: "홍",
+            name: function() {
+                console.log(this.firstName);
+                console.log(this.lastName);
+                return this.firstName + "," + this.lastName;   
+            }
+        };
+        var fullName = person4.name();
+        console.log(fullName);
+        
+        
+    
+
+    </script>
+</body>
+
+</html>

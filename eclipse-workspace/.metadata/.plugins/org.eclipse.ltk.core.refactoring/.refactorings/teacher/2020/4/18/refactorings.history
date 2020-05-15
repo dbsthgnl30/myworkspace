@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;myjava/src/picture&apos;&#x0D;&#x0A;- Original project: &apos;teacher&apos;&#x0D;&#x0A;- Destination element: &apos;myjava/src/picture&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     13. 다형성-인터페이스.png&#x0D;&#x0A;     14. 객체 복사.png" description="Copy files" destination="=myjava/src&lt;picture" element1="13. 다형성-인터페이스.png" element2="14. 객체 복사.png" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1587951007721" units="0" version="1.0"/>
+</session>

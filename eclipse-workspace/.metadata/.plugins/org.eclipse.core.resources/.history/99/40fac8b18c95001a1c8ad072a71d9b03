@@ -1,0 +1,18 @@
+package com.naver;
+
+public class Hero {
+	private Weapon[] weapons;
+	private Weapon hasWeapon;
+	
+	public Hero() {
+		weapons = new Weapon[] {new Bow("bow", 10), new Sword("sword", 20), new Hammer("hammer", 30)};
+		hasWeapon = weapons[0];
+	}
+
+	public Hero(Weapon[] weapons, Weapon hasWeapon) {
+		super();
+		this.weapons = weapons;
+		this.hasWeapon = hasWeapon;
+	}
+	
+}

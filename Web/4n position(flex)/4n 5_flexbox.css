@@ -1,0 +1,32 @@
+
+
+.container {
+    display: flex;
+    background-color:black;
+}
+.menu:hover {
+    background-color: yellow;
+}
+.menu {
+    padding: 10px;
+    color: white;
+}
+.dummy {
+    flex:1;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 10px;
+}
+.side-bar {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+.main-content {
+    flex:1;
+    /* flex:1; flex 1을 하면 side menu 가 글자가 다 써짐. 왜그런가? */
+}
+

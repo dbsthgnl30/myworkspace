@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+
+        $("button").click(function(){
+            //눌린 버튼이 삭제되게  
+            $(this).remove();
+        });
+
+        //head 누르면 result 안의 값 사라지게
+        $("#head").click(function(){
+            //내용물만 삭제되도록~ ul elem은 남아있다, li만 삭제된다
+            $("#result").empty();
+        });
+        
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-outline-primary">Lorem.</button>
+        <button class="btn btn-outline-primary">Minus!</button>
+        <button class="btn btn-outline-primary">Obcaecati?</button>
+        <button class="btn btn-outline-primary">Natus!</button>
+        <button class="btn btn-outline-primary">Nisi.</button>
+        <button class="btn btn-outline-primary">Numquam!</button>
+        <button class="btn btn-outline-primary">Cum.</button>
+        <button class="btn btn-outline-primary">Aut?</button>
+        <button class="btn btn-outline-primary">Ut.</button>
+        <button class="btn btn-outline-primary">Porro.</button>
+        
+        <div class="row">
+            <div class="col">
+                <h1 id="head">Lorem, ipsum.</h1>
+                <ul id="result">
+                    <li>Lorem.</li>
+                    <li>Quae!</li>
+                    <li>Delectus.</li>
+                    <li>Voluptas!</li>
+                    <li>Quas.</li>
+                    <li>Velit.</li>
+                    <li>Perspiciatis?</li>
+                    <li>Debitis.</li>
+                    <li>Necessitatibus.</li>
+                    <li>Ad.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

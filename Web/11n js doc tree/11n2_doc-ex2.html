@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <form action="">
+        <input type="text">
+    </form>
+
+        <p id="para1" class="mypara">Lorem.</p>
+        <p id="para2" class="mypara">Similique.</p>
+        <p id="para3">Tenetur.</p>
+
+    <img src="1.jpg" alt="1.j">
+    <img src="2.jpg" alt="2.j">
+    <img src="3.jpg" alt="3.j">
+
+
+    <script>
+        // 여러elem을 document 통해 얻어온다
+        var para1 = document.getElementById("para1");
+        console.log(para1);
+
+        // elem 을 tag 네임으로 얻어온다(여러개 가져온다)->
+        // 배열처럼 쓸 수 있다.
+        // getElementById이건 method
+        var paras = document.getElementsByTagName("p");
+        console.log(paras[1]);
+
+        var paras2 = document.getElementsByClassName("mypara");
+        console.log(paras[0]);
+
+        //자주 사용하는elem은 document의 property로 넣어놨다. 
+        // property 타입이 객체일수도, 스트링일 수도 넘버일수도
+        // document 의 property로 forms 를 넣는다. 
+        var forms = document.forms;
+        console.log("forms",forms[0]);
+
+        var images = document.images;
+        console.log(images[1]);
+
+        var para3 = document.querySelector("#para3");
+        console.log(para3);
+        
+        // 여러 선택자 얻어온다
+        var paras2 = document.querySelectorAll(".mypara");
+        console.log(paras2[0]);
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

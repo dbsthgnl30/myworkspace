@@ -1,0 +1,14 @@
+package com.naver;
+
+public class MemberDAO {
+	private final String DRIVERNAME = "oracle.jdbc.driver.OraleDriver";
+	
+	private final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	private final String USERNAME = "CA2";
+	private final String PASSWORD = "ca2";
+	
+	public MemberDAO() {
+		
+	}
+	
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="para1">Lorem.</p>
+    <script>
+        // document는 객체다. property, method가 있다. 
+        // elem 객체다.    
+        // 변수에 객체를 넣는다 / myPara 도 객체 
+        // 변수에 객체를 담으면 객체, 스트링 담으면 스트링 
+        var myPara = document.getElementById("para1");
+        var s = "hello";
+
+        //innerHTMl 은 property 이다. reference>js dom reference > element 
+        // console.log(myPara); // <p id="para1">Lorem.</p>
+        console.log(myPara.innerHTML);  // lorem 출력 
+
+
+        myPara.innerHTML = "Hello";
+        
+    </script>
+    
+</body>
+</html>
