@@ -1,4 +1,4 @@
-create table account(
+ncreate table account(
 	name varchar2(4) primary key,
 	balance number(4) default 0
 )

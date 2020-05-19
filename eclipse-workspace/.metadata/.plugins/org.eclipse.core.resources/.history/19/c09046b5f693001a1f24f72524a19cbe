@@ -1,7 +1,0 @@
-package com.naver;
-
-public class MainEx {
-	public static void main(String[] args) {
-		new Test1().me6();
-	}
-}

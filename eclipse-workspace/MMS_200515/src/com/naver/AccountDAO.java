@@ -50,7 +50,6 @@ public class AccountDAO {
 		
 			pstmt1.close();
 			
-			
 			System.out.println(4/0); //정전 상황이라 가정
 			
 			//입금되는 형태

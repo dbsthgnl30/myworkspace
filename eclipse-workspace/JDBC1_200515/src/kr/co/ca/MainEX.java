@@ -10,6 +10,7 @@ public class MainEX {
 		//dao.insert(new MemberDTO());		
 		//dao.selectAll();		
 		//dao.update(new MemberDTO());
+		
 		MemberDTO dto = new MemberDTO("m001", "kim", 1);
 		dao.insert(dto);
 	}

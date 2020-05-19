@@ -10,15 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestDAO {
-
+	
 	// 1 ->마름모 만든다
 	private final String DRIVERNAME = "oracle.jdbc.driver.OracleDriver"; // 우클릭 CopyQualifiedName/ 소문자로 되있는건 패키지,
 																			// UpperCamelCase : 클래스명
 	// 2 ->3개 이용connection만든다.(길을만든다)
 	private final String URL = "jdbc:oracle:thin:@localhost:1521:xe"; // DataSourceExplorer>New
 																		// Oracle>우클릭>properties>Driver
-																		// Properties>connectionURL 복사 //localhost: 내pc
-																		// 다
+																		// Properties>connectionURL 복사 //localhost: 내pc																		
 	private final String USERNAME = "ca2"; // 대문자로 적어도됨
 	private final String PASSWORD = "ca2"; // 소문자로
 
@@ -269,7 +268,7 @@ public class TestDAO {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (rs == null) {
+				if (rs != null) {
 					rs.close();
 				}
 				if (pstmt != null)
