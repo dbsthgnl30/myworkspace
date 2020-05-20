@@ -1,6 +1,0 @@
-package kr.co.ca;
-
-public class Snippet {
-	객체 : object = instance = bean(자동으로만들어주는것 container) = entity (DB쪽에서)
-}
-

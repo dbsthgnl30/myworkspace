@@ -1,13 +1,14 @@
 package com.naver;
 
+
+
 import java.util.Scanner;
 
-import insert.InsertCommand;
 import kr.co.ca.Command;
 
 public class Process {
 	public Process() {
-		Command[] commands = {new InsertCommand()				
+		Command[] commands = {new in	
 				
 		};
 		boolean isTrue = true;

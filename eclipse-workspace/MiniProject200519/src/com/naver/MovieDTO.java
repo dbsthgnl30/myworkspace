@@ -8,33 +8,83 @@ public class MovieDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String id;
-	private String password;
+	private String mvId;
+	private String title;
+	private String dir;
+	private String act;
+	private String genre;
+	private String age;
+	private String playTime;
 	
 	public MovieDTO() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public MovieDTO(String id, String password) {
+	public MovieDTO(String mvId, String title, String dir, String act, String genre, String age, String playTime) {
 		super();
-		this.id = id;
-		this.password = password;
+		this.mvId = mvId;
+		this.title = title;
+		this.dir = dir;
+		this.act = act;
+		this.genre = genre;
+		this.age = age;
+		this.playTime = playTime;
 	}
 
-	public String getId() {
-		return id;
+	public String getMvId() {
+		return mvId;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setMvId(String mvId) {
+		this.mvId = mvId;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDir() {
+		return dir;
+	}
+
+	public void setDir(String dir) {
+		this.dir = dir;
+	}
+
+	public String getAct() {
+		return act;
+	}
+
+	public void setAct(String act) {
+		this.act = act;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public String getPlayTime() {
+		return playTime;
+	}
+
+	public void setPlayTime(String playTime) {
+		this.playTime = playTime;
 	}
 
 	public static long getSerialversionuid() {
@@ -45,7 +95,7 @@ public class MovieDTO implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((mvId == null) ? 0 : mvId.hashCode());
 		return result;
 	}
 
@@ -58,10 +108,10 @@ public class MovieDTO implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		MovieDTO other = (MovieDTO) obj;
-		if (id == null) {
-			if (other.id != null)
+		if (mvId == null) {
+			if (other.mvId != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!mvId.equals(other.mvId))
 			return false;
 		return true;
 	}
@@ -69,8 +119,9 @@ public class MovieDTO implements Serializable {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return id;
+		return title;
 	}
+	
 	
 	
 }
