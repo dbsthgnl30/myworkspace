@@ -147,6 +147,8 @@ private final String DRIVERNAME = "oracle.jdbc.driver.OracleDriver";
 			
 			pstmt.executeUpdate();
 			
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

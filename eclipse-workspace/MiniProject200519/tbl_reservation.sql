@@ -7,7 +7,7 @@ id varchar2(21),
 pwd varchar2(21),
 name varchar2(21),
 birthDate varchar2(21),
-age varchar2(21),
+age number(3),
 tel varchar2(21),
 constraint pk_customer_id primary key(id)
 )
@@ -29,7 +29,7 @@ cus_id varchar2(21),
 mv_mvId varchar2(12),
 th_thId varchar2(21),
 day varchar2(21),
-Time varchar2(21),
+rsvTime varchar2(21),
 num number(2),
 paymentMethod varchar2(12),
 total number(7),
@@ -47,6 +47,9 @@ thTel varchar2(21)
 
 )
 
+insert into customer (id, pwd, name, birthDate, age, tel) values('c001', '2020', '배수지', '20.04.20', 30, '010-3333-2038')
+insert into customer (id, pwd, name, birthDate, age, tel) values('c002', '2030', '한수지', '20.04.30', 20, '010-3343-2038')
+
 insert into movie (mvId,title,dir,act,genre,age,playTime) values ('m001','신세계','박훈정','이정재,최민식','범죄,드라마','19세','134분')
 insert into movie (mvId,title,dir,act,genre,age,playTime) values ('m002','기생충','봉준호','송강호,조여정','범죄,드라마','15세','131분')
 insert into movie (mvId,title,dir,act,genre,age,playTime) values ('m003','타짜1','최동훈','조승우,김혜수','범죄,드라마','19세','139분')
@@ -56,6 +59,12 @@ insert into theater (thId,thName,thLocation,thTel) values('th02','강변CGV','�
 insert into theater (thId,thName,thLocation,thTel) values('th03','안양CGV','안양구', '031-9999-9999')
 
 
+commit
+
 select * from theater
 select * from movie
 select * from customer
+select * from rsv
+
+--select c.id, m.MvId,  from customer c, movie m, theater t
+
